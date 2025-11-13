@@ -1,0 +1,145 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.ekran{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: start;
+    background-color: black;
+}
+.solbolum{
+    width:44%;
+    margin: 3%;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100%;
+    
+    
+}
+.sagbolum{
+   width: 44%;
+   margin: 3%;
+   background-color: #1e1e1e;
+   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.profilfoto{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 100%;
+    object-fit: cover;
+    
+}
+.profilimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+   
+}
+.butonkutu{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 8%;
+    
+}
+button{
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 1px solid white ;
+    border-top: 1px solid white;
+    background-color: #1e1e1e;
+    color: whitesmoke;
+    text-align: center;
+}
+.ilkbtn{
+    margin-left: 0;
+}
+button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.iconkutu{
+  margin-top: 10%;
+  margin-right:0% ;
+  display: flex;
+  flex-direction: row;
+
+}
+.img1{
+    width: 32px;
+    height: 32px;
+    margin-left:5px;
+}
+h1{
+    font-family: 'Caveat',cursive;
+    color: bisque;
+    font-weight: 100; 
+   
+}
+.icerik{
+    width: 95%;
+    height: 86%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;    
+    white-space: normal;
+    hyphens: auto;
+    
+    
+}
+.Baslik{
+    margin-top: 5px;
+    height: 10%;
+    width: 98%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: White;
+}
+.Manset{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    color: white ;
+    text-align: center;
+}
+.denme{
+    height: 200px;
+    width: 98%;
+}
+.bolumler{
+    width: 98%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 98%;
+}
+
+

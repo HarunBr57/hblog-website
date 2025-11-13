@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa Başlığı</title>
+    <link rel="stylesheet" href="blogstyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&family=Great+Vibes&family=Caveat&family=Just+Another+Hand&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+     <div class="ekran">
+        <div class="solbolum">
+            <div class="profilfoto">
+                <img class="profilimg" src="profil_foto.webp">
+            </div> 
+            <h1>Harun BERBER</h1>
+            <div class="Manset">
+                <p><em>"Harun BERBER'in yazılım yolculuğu ve düşünceleri"</em><br><br><br> Merhaba, ben Harun Berber. Bu blog, benim ilk projem ve tamamen kendi emeğimle yaptığım bir çalışma. Yazılım yolculuğumda öğrendiklerimi, projelerimi ve fikirlerimi paylaştığım bu platformda hem kendimi geliştiriyor hem de öğrendiklerimi başkalarıyla paylaşmayı amaçlıyorum.</p>
+            </div>
+          
+            <div class="iconkutu">
+                <a href="https://www.instagram.com/?next=%2F" target="_blank">
+                    <img class="img1" src="instegram_icon.png">
+                </a>
+                <a href="" target="_blank">
+                    <img class="img1" src="githubi_icon.png">
+                </a>
+                <a>
+                    <img class="img1" src="whatsapp_icon.png">
+                </a>
+                <a>
+                    <img class="img1" src="x_icon.png">
+                </a>
+
+            </div>
+           
+           
+            
+ 
+        </div>
+        <div class="sagbolum">
+             <div class="butonkutu">
+                <button data-target="blogyazilari">Blog Yazıları</button>
+                <button data-target="yazisayfasi">Yazı Sayfası</button>
+                <button data-target="hakkimda">Hakkımda</button>
+                <button data-target="iletisim">İletişim</button>
+                <button data-target="Kategoriler">Kategoriler</button>
+            </div>
+            <div class="bolumler">
+                <div id="baslikid" class="Baslik">
+                    <h2>Harun BERBER</h2>
+                </div>
+                <div id="icerikid" class="icerik">
+                    <img src="profil_foto.webp">
+                    
+                    
+                </div>
+            </div>           
+        </div>
+
+     </div>
+</body>
+<script>
+    
+    const buttons = document.querySelectorAll('.butonkutu button');
+    const baslikdiv = document.getElementById('baslikid');
+    const icerikdiv = document.getElementById('icerikid');
+    
+    const yazilar = {
+       blogyazilari: {
+        baslikid: "Blog Yazıları",
+        icerikid: "Blog yazıları burada yer alacak"
+      },
+      yazisayfasi: {
+        baslikid: "Yazı Sayfası",
+        icerikid: "Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.Yazı sayfaları burada yer alacak.<br><img src='profil_foto.webp'> "
+      },
+      hakkimda: {
+        baslikid: "Hakkımda",
+        icerikid: "Hakkımda kısmı burada. Kendim ve blog hakkında bilgiler."
+      },
+      iletisim:{
+        baslikid:"İletişim Bilgilerim",
+        icerikid:"bilgilerim burada yer alicak"
+      },
+      Kategoriler:{
+        baslikid:"Kategoriler",
+        icerikid:"Kategoriler burada yer alacak"
+      }
+    };
+    
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-target');
+        baslikdiv.innerHTML = yazilar[target].baslikid;
+        icerikdiv.innerHTML = yazilar[target].icerikid;
+      });
+    });
+    
+</script>
+
+</html>
