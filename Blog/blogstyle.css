@@ -15,22 +15,29 @@ body{
     width:44%;
     margin: 3%;
     background-color: #1e1e1e;
-    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 100%;
+    border-radius: 10%;
+    transition: all 1s ease;
+    animation: golgerenk 5s infinite alternate;
+}
+.solbolum:hover,.sagbolum:hover{
+    transform: scale(1.09);
+    box-shadow: 0 0 20px 5px rgba(250, 0, 0, 0.5)
     
-    
+
 }
 .sagbolum{
    width: 44%;
    margin: 3%;
    background-color: #1e1e1e;
-   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+   border-radius: 10%;
    display: flex;
    flex-direction: column;
    align-items: center;
+   transition: all 1s ease;
+   animation: golgerenk 5s infinite alternate;
 }
 .profilfoto{
     height: 100px;
@@ -140,6 +147,30 @@ h1{
 }
 img{
     width: 98%;
+}
+.img1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0 0 20px 5px rgba(116, 22, 0, 0.49); 
+}
+hr{
+    width: 100%;
+    animation: golgerenkdegisim 5s infinite alternate;
+   
+}
+@keyframes golgerenkdegisim {
+    0%   {  box-shadow: 0 0 20px 5px rgba(250, 0, 0, 0.4) }
+    50%  {  box-shadow: 0 0 20px 5px rgba(0, 250, 0, 0.4) }
+    25%  {  box-shadow: 0 0 20px 5px rgba(220, 240, 3, 0.4) }
+    75%  {  box-shadow: 0 0 20px 5px rgba(3, 24, 250, 0.4) }
+    100% {  box-shadow: 0 0 20px 5px rgba(250, 250, 250, 0.4) }
+}
+@keyframes golgerenk {
+    0%   {  box-shadow: 0 0 20px 5px rgba(250, 0, 0, 0.4) }
+    50%  {  box-shadow: 0 0 20px 5px rgba(0, 250, 0, 0.4) }
+    25%  {  box-shadow: 0 0 20px 5px rgba(220, 240, 3, 0.4) }
+    75%  {  box-shadow: 0 0 20px 5px rgba(3, 24, 250, 0.4) }
+    100% {  box-shadow: 0 0 20px 5px rgba(250, 250, 250, 0.4) }
 }
 
 
